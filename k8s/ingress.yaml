@@ -22,8 +22,8 @@ spec:
       - backend:
           serviceName: videos-api
           servicePort: 8080
-        path: /videos-api(.*)
+        path: /videos-api(/|$)(.*)
       - backend:
-          serviceName: front-end 
+          serviceName: azure-consul-ui
           servicePort: 80
-        path: /(.*)
+        path: /consul(/|$)(.*)
