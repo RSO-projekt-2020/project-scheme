@@ -27,3 +27,7 @@ spec:
           serviceName: comments-api
           servicePort: 8080
         path: /comments-api(/|$)(.*)
+      - backend:
+          serviceName: image-labeling-api
+          servicePort: 8080
+        path: /image-labeling-api(/|$)(.*)
