@@ -28,6 +28,10 @@ spec:
           servicePort: 8080
         path: /comments-api(/|$)(.*)
       - backend:
+          serviceName: search-api
+          servicePort: 8080
+        path: /search-api(/|$)(.*)
+      - backend:
           serviceName: image-labeling-api
           servicePort: 8080
         path: /image-labeling-api(/|$)(.*)
